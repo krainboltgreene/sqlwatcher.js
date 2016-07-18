@@ -3,6 +3,9 @@
   "version": "2.0.0",
   "description": "Automatically push up sql snippets to your database.",
   "main": "transpiled/source/index.js",
+  "bin": {
+    "sqlwatcher": "bin/sqlwatcher"
+  },
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf './transpiled/' && mkdir './transpiled/' && babel './source/**/index.js' -d './transpiled/'",
