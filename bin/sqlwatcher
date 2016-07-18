@@ -1,0 +1,7 @@
+#! /usr/bin/env node
+const join = require("path").join
+const split = require("ramda").split
+const fromPairs = require("ramda").fromPairs
+const sqlwatcher = require(join(__dirname, "..", "transpiled", "source", "index.js")).default
+
+sqlwatcher(fromPairs(process.argv.slice(2).map(split(":"))))

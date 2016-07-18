@@ -2,11 +2,13 @@ import {readFile} from "fs"
 import {watch} from "chokidar"
 import knex from "knex"
 
-const write = (database) => (__, path) => {
+const write = (database) => (path) => {
   return readFile(path, (error, data) => {
     if (error) {
       return console.error(error)
     }
+
+    console.log(`Upserted ${path}`)
 
     return database.raw(data)
   })
