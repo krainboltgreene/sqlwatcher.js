@@ -23,7 +23,7 @@ const write = (database) => (path) => {
 export default function sqlwatcher ({pattern, adapter}) {
   const connection = process.env.DATABASE_URL
   const configuration = {
-    adapter,
+    client: adapter,
     connection,
     pool: {
       min: 0,
