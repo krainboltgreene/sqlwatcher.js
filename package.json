@@ -1,6 +1,6 @@
 {
   "name": "sqlwatcher",
-  "version": "2.2.1",
+  "version": "2.2.2",
   "description": "Automatically push up sql snippets to your database.",
   "main": "transpiled/source/index.js",
   "bin": {
