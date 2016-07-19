@@ -8,9 +8,13 @@ const write = (database) => (path) => {
       return console.error(error)
     }
 
-    console.log(`Upserted ${path}`)
-
     return database.raw(data)
+      .then(() => {
+        console.log(`Upserted ${path}`)
+      })
+      .catch((error2) => {
+        console.error(error2)
+      })
   })
 }
 

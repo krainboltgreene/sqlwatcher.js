@@ -27,7 +27,7 @@ First have a directory of SQL files:
 Each of these `designer_matching/` files is a function, view, or table. While working on these functions you'll find yourself wanting to have them update the server's version. This is where sqlwatcher comes in:
 
 ```
-$ sqlwatcher database:development pattern:designer_matching/*.sql
+$ sqlwatcher adapter:pg pattern:designer_matching/*.sql
 ```
 
 Now when you change those files, you'll also be executing those files.
