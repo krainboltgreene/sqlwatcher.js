@@ -3,7 +3,7 @@ import {watch} from "chokidar"
 import knex from "knex"
 
 const write = (database) => (path) => {
-  return readFile(path, (error, data) => {
+  return readFile(path, "utf-8", (error, data) => {
     if (error) {
       return console.error(error)
     }
