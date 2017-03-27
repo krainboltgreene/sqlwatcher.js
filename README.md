@@ -1,5 +1,7 @@
 # sqlwatcher
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/krainboltgreene/sqlwatcher.js.svg)](https://greenkeeper.io/)
+
 Watch SQL files and have them automatically executed on a database. Perfect for handling a set of SQL functions you're working on.
 
 ![Version][BADGE_VERSION]
